@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
+    <title>Portfolio Homepage</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,6 +11,8 @@
             padding: 0;
             background-color: #f5f5f5;
             color: black;
+            background-image: url('index-bigbackground.jpg');
+            background-size: cover;
         }
 
         .topofpage {
@@ -20,6 +22,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 20px;
+            font-family: serif;
         }
 
         .topofpage h1 {
@@ -27,6 +31,17 @@
         }
         .aboutme{
           text-align: center;
+          text-decoration: underline;
+          font-size: 30px;
+          color: white;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: bold;
+        }
+        .aboutmepar{
+            text-align: center;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
         }
 
         main {
@@ -65,6 +80,7 @@
 
         .Project1:hover, .Project2:hover, .resume:hover {
             opacity: 0.9;
+            
         }
 
         .Project1:active, .Project2:active, .resume:active {
@@ -96,7 +112,7 @@
     <main>
         <section>
             <h2 class="aboutme">About Me</h2>
-            <p class="aboutme">
+            <p class="aboutmepar">
               Hi, I'm Trenten Bishop, a Computer Science student at 
               New Mexico State University with a passion for problem-solving 
               and technology. I specialize in building software solutions, with 
@@ -115,9 +131,9 @@
             <button class="Project1">
                 <strong>Project 1: Crime Rate Analysis</strong>
             </button>
-            <button class="resume" onclick="window.location.href='resume.html';">Resume
+            <button class="resume" onclick="window.location.href='resume.html';"><strong>Resume</strong>
             </button>
-            <button class="Project2">
+            <button class="Project2" onclick="window.location.href='Project2.html';">
                 <strong>Project 2: AI Attendance Application</strong>
             </button>
         </section>
@@ -128,3 +144,4 @@
     </footer>
 </body>
 </html>
+
