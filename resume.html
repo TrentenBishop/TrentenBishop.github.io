@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        iframe {
+            height: 100vh;    
+            width: 100%;      
+            border: none;    
+        }
+        .headerofpage, .backarrow{
+          color: black;
+        }
+        .backarrow{
+          color: black;
+          background-color: transparent;
+          border: none;
+          border-radius: 15px;
+        }
+        .backarrow:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        }
+        .backarrow:active{
+          opacity: 0.8;
+        }
+        .headerofpage{
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        margin-left: 400px;
+        }
+    </style>
+</head>
+<header>
+  <button class="backarrow" onclick="window.history.back();">
+    &larr; click here to go back.
+  </button>
+  <strong class="headerofpage">My Resume</strong>
+</header>
+<body>
+    <iframe src="New Resume.pdf"></iframe>
+</body>
+</html>
