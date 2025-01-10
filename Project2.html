@@ -1,16 +1,107 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 2: AI Attendance Application</title>
   <style>
-    .topofpage{
-      text-align: center;
-      font-weight: bold;
-      text-decoration: underline;
-      font-size: 25px;
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: black;
+        background-image: url('index-bigbackground.jpg');
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1000px;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: grey;
+        position: relative; /* To position the arrow in the top-left corner */
+    }
+
+    .back-arrow {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 30px;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 500px;
+        background-color: grey;
+        border-color: black;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .back-arrow:hover {
+        background-color: #f0f0f0;
+        transition: 0.2s;
+    }
+
+    .project-description {
+        margin-top: 20px;
+    }
+
+    .github-link {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .github-link a {
+        text-decoration: none;
+        color: #0000EE;
+    }
+
+    .github-link a:hover {
+        text-decoration: underline;
     }
   </style>
-<head>
-  <header class="topofpage">
-    Welcome to second project!
-  </header>
 </head>
+<body>
+
+  <div class="container">
+    <!-- Back arrow icon -->
+    <a href="javascript:history.back()" class="back-arrow">&#8592;</a>
+
+    <h1>Project 2: AI Attendance Application</h1>
+    
+    <div class="project-description">
+        <p>
+            Developed an AI Attendance Application as part of a collaborative team of three. The application leverages OpenCV for real-time face detection, enabling automated attendance tracking through video analysis. The system efficiently captures and stores attendance records, streamlining the process for users.
+        </p>
+        <p>
+            Using Pandas for data management and Matplotlib for visualization, the project enhances accuracy in attendance tracking while reducing administrative workload. The application demonstrates the practical application of AI in educational environments, improving overall efficiency and user experience.
+        </p>
+        <p>
+            Some key features of the project include:
+        </p>
+        <ul>
+            <li>Real-time face detection using OpenCV for automatic attendance marking.</li>
+            <li>Data management and visualization with Pandas and Matplotlib.</li>
+            <li>Streamlined process for educators, reducing manual effort and increasing accuracy.</li>
+            <li>Practical application of machine learning and computer vision in educational settings.</li>
+        </ul>
+    </div>
+
+    <div class="github-link">
+        <p>Check out the project on GitHub:</p>
+        <a href="https://github.com/TrentenBishop/AI-Attendance-System" target="_blank">AI Attendance Application - GitHub</a>
+    </div>
+  </div>
+
+</body>
 </html>

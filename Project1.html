@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffffff;
+        color: black;
+        background-image: url('index-bigbackground.jpg');
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 80%;
+        max-width: 1000px;
+        height: 450px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: grey;
+        position: relative; /* To position the arrow in the top-left corner */
+    }
+
+    .back-arrow {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 30px;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 500px;
+        background-color: grey;
+        border-color: black;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    
+    .back-arrow:hover {
+        background-color: #f0f0f0;
+        transition: 0.2s;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <a href="javascript:history.back()" class="back-arrow">&#8592;</a>
+
+    <h1>Project 1: Crime Rate Analysis</h1>
+    <p>
+        In this project, I analyzed the 2023 crime report to identify trends and patterns within the data. I started by reviewing the dataset, which included various crime categories and their respective statistics across different regions.
+    </p>
+    <p>
+        My primary goal was to uncover key insights related to crime rates and identify areas that experienced significant changes or patterns in criminal activity. Through this process, I applied data analysis techniques such as:
+    </p>
+    <ul>
+        <li>Data cleaning and preprocessing to handle missing or inconsistent data.</li>
+        <li>Exploratory Data Analysis (EDA) to visualize crime trends over time and across different locations.</li>
+        <li>Correlation analysis to identify any relationships between various crime types and socio-economic factors.</li>
+        <li>Building data models to predict potential future crime hotspots based on historical data.</li>
+    </ul>
+    <p>
+        Ultimately, the project helped provide a deeper understanding of crime trends in 2023, which could be used to inform public policy or law enforcement strategies. The insights gained from this analysis highlight the importance of data-driven decision-making in addressing societal issues.
+    </p>
+    <p>
+        I applied various programming and analytical tools such as Python, Pandas, and Matplotlib to carry out this analysis, and I’m excited to share the results in my portfolio.
+    </p>
+  </div>
+
+</body>
+</html>
