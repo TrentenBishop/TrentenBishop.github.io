@@ -6,102 +6,177 @@
   <title>Project 2: AI Attendance Application</title>
   <style>
     body {
-        font-family: Arial, sans-serif;
+        font-family: 'Roboto', Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #ffffff;
-        color: black;
-        background-image: url('Index-bigbackground.jpg');
-        background-size: cover;
-        height: 100vh;
+        background: linear-gradient(to bottom right, #1e293b, #334155);
+        color: white;
+        min-height: 100vh;
+    }
+
+    header {
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 15px 30px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    header a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        margin: 0 15px;
+        transition: color 0.3s;
+    }
+
+    header a:hover {
+        color: #38bdf8;
     }
 
     .container {
-        width: 80%;
-        max-width: 1000px;
-        height: auto;
+        width: 90%;
+        max-width: 900px;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.1);
         border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        padding: 20px;
-        box-sizing: border-box;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+        margin: 100px auto;
+        text-align: left;
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .text-content {
+        flex: 1;
+    }
+
+    .image-container {
+        flex: 0 0 300px;
+        margin-left: 20px;
+        margin-top: 200px;
         text-align: center;
-        background-color: grey;
-        position: relative; /* To position the arrow in the top-left corner */
     }
 
-    .back-arrow {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        font-size: 30px;
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-        padding: 10px;
-        border-radius: 500px;
-        background-color: grey;
-        border-color: black;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    .image-container img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
     }
 
-    .back-arrow:hover {
-        background-color: #f0f0f0;
-        transition: 0.2s;
+    .image-container p {
+        margin-top: 10px;
+        font-size: 0.9rem;
+        color: #94a3b8;
     }
 
-    .project-description {
-        margin-top: 20px;
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #94a3b8;
+        padding-bottom: 10px;
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        margin: 20px 0;
+        padding-left: 20px;
+    }
+
+    ul li {
+        margin-bottom: 10px;
     }
 
     .github-link {
         margin-top: 20px;
-        font-size: 18px;
+        font-size: 1rem;
     }
 
     .github-link a {
+        color: #38bdf8;
         text-decoration: none;
-        color: #0000EE;
+        transition: color 0.3s;
     }
 
     .github-link a:hover {
-        text-decoration: underline;
+        color: #7dd3fc;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #94a3b8;
+    }
+
+    footer a {
+        color: #38bdf8;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    footer a:hover {
+        color: #7dd3fc;
+    }
+
+    .copyright {
+        margin-top: 10px;
+        font-size: 0.8rem;
+        color: #94a3b8;
     }
   </style>
 </head>
 <body>
+  <header>
+    <div><a href="index.html">Home</a></div>
+    <nav>
+      <a href="project1.html">Data Exploration Project</a>
+      <a href="project2.html">AI Attendance System</a>
+    </nav>
+  </header>
 
   <div class="container">
-    <!-- Back arrow icon -->
-    <a href="javascript:history.back()" class="back-arrow">&#8592;</a>
+    <div class="text-content">
+      <h1>Project 2: AI Attendance Application</h1>
+      <p>
+          Developed an AI Attendance Application as part of a collaborative team of three. The application leverages OpenCV for real-time face detection, enabling automated attendance tracking through video analysis. The system efficiently captures and stores attendance records, streamlining the process for users.
+      </p>
+      <p>
+          Using Pandas for data management and Matplotlib for visualization, the project enhances accuracy in attendance tracking while reducing administrative workload. The application demonstrates the practical application of AI in educational environments, improving overall efficiency and user experience.
+      </p>
+      <p>
+          Some key features of the project include:
+      </p>
+      <ul>
+          <li>Real-time face detection using OpenCV for automatic attendance marking.</li>
+          <li>Data management and visualization with Pandas and Matplotlib.</li>
+          <li>Streamlined process for educators, reducing manual effort and increasing accuracy.</li>
+          <li>Practical application of machine learning and computer vision in educational settings.</li>
+      </ul>
 
-    <h1>Project 2: AI Attendance Application</h1>
-    
-    <div class="project-description">
-        <p>
-            Developed an AI Attendance Application as part of a collaborative team of three. The application leverages OpenCV for real-time face detection, enabling automated attendance tracking through video analysis. The system efficiently captures and stores attendance records, streamlining the process for users.
-        </p>
-        <p>
-            Using Pandas for data management and Matplotlib for visualization, the project enhances accuracy in attendance tracking while reducing administrative workload. The application demonstrates the practical application of AI in educational environments, improving overall efficiency and user experience.
-        </p>
-        <p>
-            Some key features of the project include:
-        </p>
-        <ul>
-            <li>Real-time face detection using OpenCV for automatic attendance marking.</li>
-            <li>Data management and visualization with Pandas and Matplotlib.</li>
-            <li>Streamlined process for educators, reducing manual effort and increasing accuracy.</li>
-            <li>Practical application of machine learning and computer vision in educational settings.</li>
-        </ul>
+      <div class="github-link">
+          <p>Check out the project on GitHub:</p>
+          <a href="https://github.com/TrentenBishop/AI-Attendance-System" target="_blank">AI Attendance Application - GitHub</a>
+      </div>
     </div>
-
-    <div class="github-link">
-        <p>Check out the project on GitHub:</p>
-        <a href="https://github.com/TrentenBishop/AI-Attendance-System" target="_blank">AI Attendance Application - GitHub</a>
+    <div class="image-container">
+      <img src="picture1.jpg" alt="AI Attendance System User Interface">
+      <p>AI Attendance System User Interface</p>
     </div>
   </div>
 
+  <footer>
+    <p>Contact me: <a href="mailto:ttbishop@nmsu.edu">ttbishop@nmsu.edu</a></p>
+    <p class="copyright">&copy; 2025 Trenten Bishop. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+
